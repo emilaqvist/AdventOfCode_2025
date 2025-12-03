@@ -1,16 +1,17 @@
+package Day1;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Day1 {
     public static void main(String[] args) {
-
         int lastLocation= 50;
         int ticks;
         int nullHits = 0;
         int nullHitsNew = 0;
 
         String RL;
-        try (BufferedReader br = new BufferedReader(new FileReader("src/rotations.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("src/Day1/rotations.txt"))){
             String currentLine;
             while((currentLine = br.readLine()) != null){
 
@@ -44,11 +45,6 @@ public class Day1 {
 
             System.out.println("Antal gånger på 0: " + nullHits);
             System.out.println("Antal träffar på 0: " + nullHitsNew);
-
-
-
-
-
 
         }catch (Exception e){
             e.printStackTrace();
